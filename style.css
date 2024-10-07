@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.main{
+.main {
     width: 100%;
     background: url(pic/bg.jpg);
     background-position: center;
@@ -13,7 +13,7 @@
     font-family: sans-serif;
 }
 
-.navbar{
+.navbar {
     width: 86%;
     display: flex;
     margin: auto;
@@ -22,61 +22,57 @@
     justify-content: space-between;
 }
 
-.navbar .logo{
+.navbar .logo {
     width: 160px;
     cursor: pointer;
-    margin-top: -3%;
-    margin-left: -2%;
 }
 
-ul{
+ul {
     margin-top: -4%;
 }
 
-ul li{
+ul li {
     list-style: none;
     display: inline-block;
     padding: 10px 16px;
 }
 
-ul li a{
+ul li a {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     color: darkslategray;
-    margin-top: -3%;
     transition: .4s ease;
-
 }
 
-ul li a:hover{
-    color: rgb(230,104,59);
+ul li a:hover {
+    color: rgb(230, 104, 59);
 }
 
-.info{
+.info {
     margin-left: 7%;
     margin-top: 6%;
 }
 
-.info h1{
+.info h1 {
     font-size: 65px;
-    color: rgb(36,32,30);
+    color: rgb(36, 32, 30);
 }
 
-.info h3{
+.info h3 {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 24px;
 }
 
-.info span{
-    color: rgb(230,104,59);
+.info span {
+    color: rgb(230, 104, 59);
 }
 
-.info a{
-    text-decoration:  none;
+.info a {
+    text-decoration: none;
     color: #fff;
-    background: rgb(36,32,30);
+    background: rgb(36, 32, 30);
     margin: 26px 0;
     padding: 10px 18px;
     border-radius: 10px;
@@ -84,11 +80,11 @@ ul li a:hover{
     transition: .4s ease;
 }
 
-.info a:hover{
-    background: rgb(59,174,209);
+.info a:hover {
+    background: rgb(59, 174, 209);
 }
 
-.image{
+.image {
     width: 30%;
     height: 60%;
     position: absolute;
@@ -96,7 +92,7 @@ ul li a:hover{
     bottom: 0;
 }
 
-.image img{
+.image img {
     position: absolute;
     height: 140%;
     left: 40%;
@@ -105,47 +101,41 @@ ul li a:hover{
     transition: left 2s ease;
 }
 
-.image:hover .girl{
+.image:hover img {
     left: 55%;
 }
 
-.icons a{
+.icons a {
     text-decoration: none;
     color: #000;
 }
 
-.icons ion-icon{
+.icons ion-icon {
     margin-left: 7%;
-    color: #000;
-    margin-right: -60px;
     font-size: 40px;
     transition: .4s ease;
-    
 }
 
-.icons ion-icon:hover{
-    color: rgb(59,174,209);
+.icons ion-icon:hover {
+    color: rgb(59, 174, 209);
 }
 
-/*footer */
-
+/* Footer */
 footer {
     width: 100%;
-    display: inline-block;
     background: #171717;
 }
 
 .down {
     display: flex;
     justify-content: space-around;
+    color: #f1f1f1;
 }
 
 .down h3 {
     text-align: center;
     text-transform: capitalize;
     padding: 15px;
-
-    color: #f1f1f1;
     font-weight: 600;
 }
 
@@ -169,30 +159,28 @@ footer {
     background: #aaaaaa;
     transition: 0.5s;
     font-weight: 400;
-
 }
+
 .media {
     padding: 15px;
     text-align: center;
-    color: white;
 }
 
+/* Additional Styles */
 .info-box {
-    border: 2px solid #eb8007; /* Black border */
+    border: 2px solid #eb8007;
     padding: 20px;
     margin: 20px 0;
-    background-color: #f9f9f9; /* Light gray background */
-    border-radius: 20px; /* Rounded corners */
-    width: fit-content; /* Optional: adjusts the width to fit the content */
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    width: fit-content;
 }
 
-.title-present{
+.title-present {
     font-family: 'Playfair Display', serif;
 }
 
-
-
- .gallery {
+.gallery {
     padding: 50px 0;
     text-align: center;
 }
@@ -211,13 +199,12 @@ footer {
 }
 
 .gallery-item {
-    /* width: 300px; */
     width: calc(33.333% - 40px);
     height: 200px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 50px; /*space between them */
+    margin-bottom: 50px;
 }
 
 .gallery-item img {
@@ -230,11 +217,6 @@ footer {
 .gallery-item:hover img {
     transform: scale(1.1);
 }
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .services {
     text-align: center;
@@ -246,18 +228,21 @@ footer {
     font-size: 2em;
     margin-bottom: 40px;
 }
+
 .works h2 {
     font-size: 2em;
     margin-bottom: 40px;
 }
 
-.services-container {
+.services-container,
+.works-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.service-card {
+.service-card,
+.works-card {
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -274,56 +259,80 @@ footer {
     margin-bottom: 15px;
 }
 
-.service-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.service-card p {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.5;
-}
-
-
- .works-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 20px; /* Space between the cards */
-    padding: 20px;
-}
- .works-card {
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    background-color: #fafafa;
-    box-shadow: 0px 4px 6px rgb(253, 155, 8);
-    text-align: center;
-    overflow: hidden; /* Ensure the content fits inside the card */
-}
-
-.works-card img {
+.works-card img{
+    
     width: 100%; /* Make the image take the full width of the card */
     height: auto; /* Maintain the aspect ratio of the image */
     max-height: 200px; /* Optional: Set a max height to ensure images don't get too tall */
     object-fit: cover; /* Ensure the image scales properly to fit its container */
     margin-bottom: 15px;
     border-radius: 5px; /* Optional: Add some rounding to the image */
+
 }
 
+.service-card h3,
 .works-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #333;
-    padding: 10px 0; /* Add padding to create space between the image and text */
 }
 
+.service-card p,
 .works-card p {
     font-size: 1em;
     color: #666;
     line-height: 1.5;
-    padding: 0 10px; /* Optional: Add padding to the sides of the paragraph */
 }
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+        text-align: center;
+        order: 1;
+    }
+
+    .info h1 {
+        font-size: 45px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 0;
+        margin: 20px auto;
+        text-align: center;
+        padding-bottom: 20px;
+        order: 2;
+    }
+
+    .image img {
+        position: static;
+        width: 70%;
+        height: auto;
+        max-width: 300px;
+        display: inline-block;
+        transform: none;
+        left: auto;
+    }
+
+    footer {
+        order: 3;
+    }
+}
+
