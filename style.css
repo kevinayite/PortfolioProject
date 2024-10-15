@@ -52,6 +52,7 @@ ul li a:hover {
 .info {
     margin-left: 7%;
     margin-top: 6%;
+    max-width: 50%;
 }
 
 .info h1 {
@@ -285,6 +286,9 @@ footer {
 }
 
 
+
+
+
 @media screen and (max-width: 768px) {
     .main {
         height: auto;
@@ -292,23 +296,15 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    form {
-        width: 90%;  /* Increase the form width for smaller devices */
-        font-size: 18px;  /* Increase font size for readability */
-        padding: 30px;  /* Adjust padding if needed */
-      }
     
-      input[type="text"], input[type="email"], input[type="password"], textarea {
-        font-size: 16px;  /* Increase input field text size */
-        padding: 10px;  /* Add more padding for touch-friendly inputs */
-      }
-
     .info {
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 10%;
         text-align: center;
         order: 1;
+        max-width: 100%; /* Change from 50% to 100% */
+        
     }
 
     .info h1 {
@@ -318,6 +314,20 @@ footer {
     .info h3 {
         font-size: 16px;
         line-height: 22px;
+    }
+
+    form {
+        width: 100%;  /* Adjust the form to take full width */
+        font-size: 16px;  /* Ensure the text inside the form is readable */
+        padding: 20px;  /* Adjust padding for a clean layout */
+        box-sizing: border-box;  /* Ensure padding doesn't break layout */
+    }
+
+    input[type="text"], input[type="email"], input[type="number"], textarea {
+        font-size: 16px;
+        padding: 10px;  /* Ensure padding for touch-friendly inputs */
+        width: 100%;  /* Ensure the input fields take up full width */
+        box-sizing: border-box;
     }
 
     .image {
@@ -345,4 +355,3 @@ footer {
         order: 3;
     }
 }
-
