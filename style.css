@@ -3,6 +3,25 @@
     padding: 0;
 }
 
+
+.button {
+    display: inline-block;
+    background-color: #eb8007;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #d46a00;
+}
+
+
 .main {
     width: 100%;
     background: url(pic/bg.jpg);
